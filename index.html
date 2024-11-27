@@ -38,15 +38,15 @@ img:hover {
 
     <script>
       const six_plus = [
-    "gb.png",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772430918254622/tf.png?ex=67466f74&is=67451df4&hm=3a815141374949b668f82e764a253ad68dffe9fd06e99f309fc2c71024ab915c&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772430377324624/ssbu.png?ex=67466f74&is=67451df4&hm=6ae5e13011bf16c501bf7a24c5bfde1efc301c24d58974b56c59ace07cce1463&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772428011474964/br.png?ex=67466f73&is=67451df3&hm=b930a3cc4f3877c5da2d20d44d43dac0fd2fe70881b39ff6aad37b6b3e6ee924&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772431312388146/uns.png?ex=67466f74&is=67451df4&hm=3d883ecc2cae0fa4f6f7c8bfb6c3edda597a1f24da6648d6ea8dd91b320f7ff2&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772429655773226/ppce.png?ex=67466f74&is=67451df4&hm=ddaa9bfc320cae01015e12542e741fa0d7407c591e0bdea0bebfebd5c5017c81&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772428728832040/pp.png?ex=67466f73&is=67451df3&hm=2c2cac94b68b38c088d3f950771f371deb719c943eb087ab56b767d269209dfa&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310772429211304026/pp2.png?ex=67466f74&is=67451df4&hm=1a1cfe66bc68a39436bde67ca65b92297dbf293440882d4b6f9f5f732658bd57&",
-    "https://cdn.discordapp.com/attachments/1310772163002765393/1310780655986151485/ad2.png?ex=6746771d&is=6745259d&hm=432f4632c336f1dd01a3c7331dfbacc17291870998c3728a9d013795fdec31cc&"
+    "gb",
+    "tf",
+    "ssbu",
+    "br",
+    "uns",
+    "ppce",
+    "pp",
+    "pp2",
+    "ad2"
 ]; 
 const six_vids = [
     "https://www.youtube.com/watch?v=Vz0BriND6pE&t=27s",
@@ -64,7 +64,7 @@ let sixLen = six_plus.length;
 
 let sixdisplay = "<div>";
 for (let i = 0; i < sixLen; i++) {
-    sixdisplay += "<a href=\"" + six_vids[i] + "\">" +   "<img src=\"" + six_plus[i] + "\"></a>"
+    sixdisplay += "<a href=\"" + six_vids[i] + "\">" +   "<img src=\"" + six_plus[i] + ".png\"></a>"
 }
 
 sixdisplay += "</div>";
