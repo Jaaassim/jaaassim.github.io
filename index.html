@@ -6,33 +6,44 @@
 <title>Create Directories</title>
 </head>
 <body>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+        }
+        
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            font-size: calc(300%)
+        }
+        
+        img {
+            width: 80%;
+            border-radius: 25px;
+            padding: 5px;
+            transition: 0.1s;
+        }
+        
+        img:hover {
+            transition: 0.1s;
+        }
+            </style>
+        
+    
+
+
+
+
+    
     <h1>٦ لاعبين او اكثر</h1>
     <p id="sixp"></p>
     <h1>٤ لاعبين</h1>
     <p id="fourp"></p>
-    <style>
-body {
-    text-align: center;
-    background-color: rgb(50, 50, 50);
-}
+    <h1>لاعبين</h1>
+    <p id="twop"></p>
 
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-size: calc(300%)
-}
-
-img {
-    width: 80%;
-    border-radius: 25px;
-    padding: 5px;
-    transition: 0.1s;
-}
-
-img:hover {
-    transition: 0.1s;
-}
-    </style>
 
 
 
@@ -74,22 +85,23 @@ document.getElementById("sixp").innerHTML = sixdisplay;
 
 
 const four_plus = [
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780656418295849/cc.png?ex=6746771d&is=6745259d&hm=69692dedf96dabafd6672c194dcc2e5079488f62a93ef984ebf289b6322587eb&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780656833269790/eb.png?ex=6746771d&is=6745259d&hm=33548bc13622344c94f6a22a2c64a4ca5daf3a01e686b98ce77fd30edff20fd6&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780657550491669/hh.png?ex=6746771d&is=6745259d&hm=139b248cf6aac30acdb34c0ac8067485b05bbc3300f83ded08b1de98f08e2360&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780657248637060/g.png?ex=6746771d&is=6745259d&hm=4a47e78427a3ae3ab4826a005fb5b5aee742c19cec578795f62a478bb091de51&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780658238619730/mo.png?ex=6746771e&is=6745259e&hm=7b86c256aef7c1cdd1d1c0746aaaed984337548f2eb24122e1483a34ffe8174f&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780658779422840/mo2.png?ex=6746771e&is=6745259e&hm=0010394358d8acfe35b8e21d451cf7fe1972d92547ad9c46d94dae55329c147f&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780659308167299/mpss.png?ex=6746771e&is=6745259e&hm=2b07b34f7140feb33b2772857406bbbb53a749c10144296903bde21a2eb51004&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780740035674132/smpj.png?ex=67467731&is=674525b1&hm=9b7d15b5259eda2678e4d1be3daeef1bd03525c3b1008acada57f7d0c943ecbb&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780655616917524/oc2.png?ex=6746771d&is=6745259d&hm=4cec266c6c288b5cf0ad8dbb63a3e50f82e9813cade91cb8f243b06eaee4a2d2&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780741654941776/oddc.png?ex=67467731&is=674525b1&hm=82c064b2e02ec9fb78c3228dda975f6bfdc8d1fcd636fdb6db8fe2ef8abab0db&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780737489731655/rl.png?ex=67467730&is=674525b0&hm=3ba3fe5c149e51e94ace2f8bb7b54f164aa1c9ba9a8bd6e35657a87784185cff&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780737863155814/smbw.png?ex=67467731&is=674525b1&hm=3db191e4abdc68084dca1cb4d52028a9673df9995d7365de63b1257e69249c04&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780740375416872/tp.png?ex=67467731&is=674525b1&hm=8c9232f353158965fd8e8706d3e019e3ff30068d7c2afc51a9640f85990b3449&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780740778066010/tt.png?ex=67467731&is=674525b1&hm=65fa4bdedfeb544d0c8a582a89138e8252a93d8881158649abd244900ec976c4&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780741222666240/uch.png?ex=67467731&is=674525b1&hm=0ee3a852f7b87760896f7adfcd6ed9c3918ed00a3ccfb309ebc4bbcbd36bb2a2&",
-    "https://media.discordapp.net/attachments/1310772163002765393/1310780657869393980/mcps3.png?ex=6746771d&is=6745259d&hm=2ab851f980ee79d3406edbfab7df9f9453a34b4f025a8002b1351054e574c219&"
+    "cc",
+    "eb",
+    "hh",
+    "g",
+    "mo",
+    "mo2",
+    "mpss",
+    "smpj",
+    "oc2",
+    "slftfo",
+    "oddc",
+    "rl",
+    "smbw",
+    "tp",
+    "tt",
+    "uch",
+    "mcps3"
 ]; 
 const four_vids =[
     "https://youtu.be/2NBOxQ93YBg?si=YF3uYpPPGSTEcxsO&t=248",
@@ -101,6 +113,7 @@ const four_vids =[
     "https://youtu.be/2jEq0F656aY?si=RAjSzzgplq_7PXKb&t=3",
     "https://youtu.be/ynP20RtOYvU?si=47h6jEMKJaT97fMB&t=38",
     "https://youtu.be/9LpXVOO4-a8?si=3fC_LQ3GzLzxmXMF&t=598",
+    "https://youtu.be/sHGYqri4Qcs?si=GrMj-QSJi1K51TVV&t=29",
     "https://youtu.be/Djmp1oupoOQ?si=aweL2rgTjQyiPNA-&t=138",
     "https://youtu.be/JL5MBZvdGfQ?si=8AtXJTaIox3CplLp&t=13",
     "https://youtu.be/A-4ddow_RGs?si=mXemLMNA_d0jf9FY&t=311",
@@ -113,12 +126,45 @@ let fourLen = four_plus.length;
 
 let fourdisplay = "<div>";
 for (let i = 0; i < fourLen; i++) {
-    fourdisplay +=  "<a href=\"" + four_vids[i] + "\">" +    "<img src=\"" + four_plus[i] + "\"><a>"
+    fourdisplay +=  "<a href=\"" + four_vids[i] + "\">" +    "<img src=\"" + four_plus[i] + ".png\"><a>"
 }
 
 fourdisplay += "</div>";
 
 document.getElementById("fourp").innerHTML = fourdisplay;        
+
+
+
+
+const two_plus = [
+    "it2",
+    "usf4",
+    "dd",
+    "dst",
+    "cu",
+    "cwm"
+]; 
+const two_vids =[
+    "https://youtu.be/i7ISeIm6l3E?si=pPHe1PTeLG9XcdjS&t=394",
+    "https://youtu.be/Wxvv80CVlVk?si=mpujiEs4nBK1TJF3&t=40",
+    "https://youtu.be/5XVVgGtsh00?si=_NCLPv4mv4A5PaKE&t=219 ",
+    "https://www.youtube.com/live/l_zMeMwW41U?si=4jnfvVYXd3bCB9WR&t=768",
+    "https://youtu.be/cCRTRsQ2W1U?si=culFlJH-GbbwVIzp&t=59",
+    "https://youtu.be/3bztdbNp7Hw?si=yhdU7HkmCITChjFR&t=498"
+]
+let twoLen = two_plus.length;
+
+let twodisplay = "<div>";
+for (let i = 0; i < twoLen; i++) {
+    twodisplay +=  "<a href=\"" + two_vids[i] + "\">" +    "<img src=\"" + two_plus[i] + ".png\"><a>"
+}
+
+twodisplay += "</div>";
+
+document.getElementById("twop").innerHTML = twodisplay;        
+
+
+
     </script>
 </body>
 </html>
