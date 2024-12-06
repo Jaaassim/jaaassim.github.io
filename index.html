@@ -3,168 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Create Directories</title>
+<title>Game Preview</title>
+<link rel="sortcut icon" type="x-icon" href="icon.png">
+<link rel="stylesheet" href="games.css">
 </head>
+
+    
 <body>
-
-    <style>
-        body {
-            text-align: center;
-            background-color: rgb(50, 50, 50);
-        }
-        
-        h1 {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: white;
-            font-size: calc(300%)
-        }
-        
-        img {
-            width: 80%;
-            border-radius: 25px;
-            padding: 5px;
-            transition: 0.1s;
-        }
-        
-        img:hover {
-            transition: 0.1s;
-        }
-            </style>
-        
-    
-
-
-
-
-    
-    <h1>٦ لاعبين او اكثر</h1>
+    <h2>٦ لاعبين او اكثر</h2>
     <p id="sixp"></p>
+    <h1></h1>
     <h1>٤ لاعبين</h1>
     <p id="fourp"></p>
     <h1>لاعبين</h1>
     <p id="twop"></p>
+<footer>
+    <a href="https://github.com/Jaaassim"><img class="profpic" src="me.png"></a>
+    <a href="https://github.com/Jaaassim/jaaassim.github.io"><img class="profpic" src="Github.png"></a>
+</footer>
 
-
-
-
-    <script>
-      const six_plus = [
-    "gb",
-    "tf",
-    "ssbu",
-    "br",
-    "uns",
-    "ppce",
-    "pp",
-    "pp2",
-    "ad2"
-]; 
-const six_vids = [
-    "https://www.youtube.com/watch?v=Vz0BriND6pE&t=27s",
-    "https://youtu.be/T7Lyf1fkoHY?si=CfaIq0VSwmjFKowk",
-    "https://youtu.be/7Xepdym7bFQ?si=--oF6usvgXDIAzge&t=16",
-    "https://youtu.be/-h3O0YST4ZU?si=fpqr1JzAUb92JUbG&t=26",
-    "https://youtu.be/5Xd4OzUpdhM?si=iT5uxzhtsrbSdWH8&t=376",
-    "https://youtu.be/-iBBkVgPA2c?si=gKTqa3fLoIf8pa3U&t=50",
-    "https://youtu.be/jtNGxbm85u8?si=jLdqYSBaoE6Ajmkm&t=31",
-    "https://youtu.be/lN_DlZq7GnQ?si=zZ67RfDZhDCHhzAU",
-    "https://youtu.be/2rejbEAr96c?si=sxol-0JQTLWLEi04&t=136"
-]
-
-let sixLen = six_plus.length;
-
-let sixdisplay = "<div>";
-for (let i = 0; i < sixLen; i++) {
-    sixdisplay += "<a href=\"" + six_vids[i] + "\">" +   "<img src=\"" + six_plus[i] + ".png\"></a>"
-}
-
-sixdisplay += "</div>";
-
-document.getElementById("sixp").innerHTML = sixdisplay;
-
-
-
-const four_plus = [
-    "cc",
-    "eb",
-    "hh",
-    "g",
-    "mo",
-    "mo2",
-    "mpss",
-    "smpj",
-    "oc2",
-    "slftfo",
-    "oddc",
-    "rl",
-    "smbw",
-    "tp",
-    "tt",
-    "uch",
-    "mcps3"
-]; 
-const four_vids =[
-    "https://youtu.be/2NBOxQ93YBg?si=YF3uYpPPGSTEcxsO&t=248",
-    "https://youtu.be/JX2SNrLsE28?si=E5yReRgczZNiaHwc&t=9",
-    "https://youtu.be/tl07NG4ZY5c?si=-UfN_cdL1wlR1yXV&t=55",
-    "https://youtu.be/nb_uMp38ebA?si=2_MUVyOYvYgYcGsL&t=16",
-    "https://youtu.be/f_IuHhgUlt4?si=-oDon-A857jwSPX3&t=16",
-    "https://youtu.be/EdDrzJP3dKM?si=wn5A1dKF9DY7yeWw&t=6",
-    "https://youtu.be/2jEq0F656aY?si=RAjSzzgplq_7PXKb&t=3",
-    "https://youtu.be/ynP20RtOYvU?si=47h6jEMKJaT97fMB&t=38",
-    "https://youtu.be/9LpXVOO4-a8?si=3fC_LQ3GzLzxmXMF&t=598",
-    "https://youtu.be/sHGYqri4Qcs?si=GrMj-QSJi1K51TVV&t=29",
-    "https://youtu.be/Djmp1oupoOQ?si=aweL2rgTjQyiPNA-&t=138",
-    "https://youtu.be/JL5MBZvdGfQ?si=8AtXJTaIox3CplLp&t=13",
-    "https://youtu.be/A-4ddow_RGs?si=mXemLMNA_d0jf9FY&t=311",
-    "https://youtu.be/QFA74asrQBg?si=FDN_vsKU_OAz7DPJ&t=14",
-    "https://youtu.be/wLRIhNFUE9c?si=kq6--eA2AM7SzQiz&t=47",
-    "https://youtu.be/PeL1uJwjyY0?si=fa6sEOUu4r0BONrW&t=159",
-    "https://youtu.be/AXhHFmk3WVs?si=pAGLtdW_HuVbamjS&t=3690"
-]
-let fourLen = four_plus.length;
-
-let fourdisplay = "<div>";
-for (let i = 0; i < fourLen; i++) {
-    fourdisplay +=  "<a href=\"" + four_vids[i] + "\">" +    "<img src=\"" + four_plus[i] + ".png\"><a>"
-}
-
-fourdisplay += "</div>";
-
-document.getElementById("fourp").innerHTML = fourdisplay;        
-
-
-
-
-const two_plus = [
-    "it2",
-    "usf4",
-    "dd",
-    "dst",
-    "cu",
-    "cwm"
-]; 
-const two_vids =[
-    "https://youtu.be/i7ISeIm6l3E?si=pPHe1PTeLG9XcdjS&t=394",
-    "https://youtu.be/Wxvv80CVlVk?si=mpujiEs4nBK1TJF3&t=40",
-    "https://youtu.be/5XVVgGtsh00?si=_NCLPv4mv4A5PaKE&t=219 ",
-    "https://www.youtube.com/live/l_zMeMwW41U?si=4jnfvVYXd3bCB9WR&t=768",
-    "https://youtu.be/cCRTRsQ2W1U?si=culFlJH-GbbwVIzp&t=59",
-    "https://youtu.be/3bztdbNp7Hw?si=yhdU7HkmCITChjFR&t=498"
-]
-let twoLen = two_plus.length;
-
-let twodisplay = "<div>";
-for (let i = 0; i < twoLen; i++) {
-    twodisplay +=  "<a href=\"" + two_vids[i] + "\">" +    "<img src=\"" + two_plus[i] + ".png\"><a>"
-}
-
-twodisplay += "</div>";
-
-document.getElementById("twop").innerHTML = twodisplay;        
-
-
-
-    </script>
+    <script src="games.js"></script>
 </body>
 </html>
